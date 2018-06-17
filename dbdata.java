@@ -1,4 +1,11 @@
-class getdata extends  Thread{
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.*;
+
+public class dbdata extends  Thread{
     Connection conn;
     @Override
     public void run() {
